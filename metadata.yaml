@@ -1,5 +1,5 @@
 homepage: "https://www.hypesaas.com"
 documentation: "https://www.hypesaas.com/tutorials"
 versions:
-  - sha: 5f02a788b90ae804f86b04aa24af8937e567874a
+  - sha: b9cee3342b63f089cb3d2f1ff6a16653f2de485a
     changeNotes: Initial release.
