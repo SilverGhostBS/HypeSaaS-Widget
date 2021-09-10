@@ -3,3 +3,5 @@ documentation: "https://www.hypesaas.com/tutorials"
 versions:
   - sha: b9cee3342b63f089cb3d2f1ff6a16653f2de485a
     changeNotes: Initial release.
+  - sha: 08500bf3a5035056c923d6b416bffbc04d0bbb73
+    changeNotes: Added variables for widget sizing (desktop&mobile)
