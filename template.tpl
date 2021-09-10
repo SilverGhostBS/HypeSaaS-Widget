@@ -92,6 +92,48 @@ ___TEMPLATE_PARAMETERS___
     "name": "ct",
     "displayName": "Cover Text (ct)",
     "simpleValueType": true
+  },
+  {
+    "type": "SELECT",
+    "name": "mws",
+    "displayName": "Mobile Widget Size (mws)",
+    "macrosInSelect": true,
+    "selectItems": [
+      {
+        "value": "ms",
+        "displayValue": "Small"
+      },
+      {
+        "value": "mm",
+        "displayValue": "Medium"
+      },
+      {
+        "value": "mb",
+        "displayValue": "Large"
+      }
+    ],
+    "simpleValueType": true
+  },
+  {
+    "type": "SELECT",
+    "name": "dws",
+    "displayName": "Desktop Widget Size (dws)",
+    "macrosInSelect": true,
+    "selectItems": [
+      {
+        "value": "ds",
+        "displayValue": "Small"
+      },
+      {
+        "value": "dm",
+        "displayValue": "Medium"
+      },
+      {
+        "value": "db",
+        "displayValue": "Large"
+      }
+    ],
+    "simpleValueType": true
   }
 ]
 
@@ -108,6 +150,8 @@ logToConsole('Checking permissions...');
 if (queryPermission('access_globals', 'readwrite', 'hypesaas_conf') && queryPermission('inject_script', url)) {
   logToConsole('Perms are ok, adding config...');
   setInWindow('hypesaas_conf', {
+    'dws': data.dws,
+    'mws': data.mws,
     'wbc': data.wbc,
     'ws': data.ws,
     'wa': data.wa,
@@ -253,6 +297,6 @@ scenarios:
 
 ___NOTES___
 
-Created on 9/9/2021, 3:17:51 PM
+Created on 9/10/2021, 6:06:24 PM
 
 
